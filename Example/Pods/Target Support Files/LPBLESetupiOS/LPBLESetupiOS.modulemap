@@ -1,0 +1,6 @@
+framework module LPBLESetupiOS {
+  umbrella header "LPBLESetupiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
