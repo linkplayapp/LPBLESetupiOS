@@ -12,7 +12,7 @@ LPBLESetup主要提供了两个功能：
 
 ## 文档
 
-你可以在这里找到更多[文档](https://linkplayapp.github.io/linkplay_sdk_doc/zh-hans/introduction.html) 。
+你可以在这里找到更多[文档](https://linkplayapp.github.io/linkplay_sdk_doc/zh-hans/iOS/DeviceSetup.html#wi-fi-%E9%85%8D%E7%BD%91%E6%A8%A1%E5%BC%8F) 。
 
 ## 示例
 

@@ -12,7 +12,7 @@ LPBLESetup mainly provides two functions：
 
 ## Documentation
 
-You can find documentation [on the website](https://linkplayapp.github.io/linkplay_sdk_doc/en/).
+You can find documentation [on the website](https://linkplayapp.github.io/linkplay_sdk_doc/en/iOS/DeviceSetup.html#ble-wi-fi-setup).
 
 ## Example
 
