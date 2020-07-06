@@ -18,6 +18,8 @@ You can find documentation [on the website](https://linkplayapp.github.io/linkpl
 
 - [Download LPBLESetupiOS](https://github.com/linkplayapp/LPBLESetupiOS/archive/master.zip) and import SDK to your project
 
+- [Import LPMusicKit.framework](https://github.com/linkplayapp/LPMusicKitiOS), LPBLESetupiOS is generally used with LPMusicKitiOS, the purpose is to configure the device to the router through BLE
+
 ## SDK Demo
 ###  1. SDK demo with CocoaPods
 - [LPMusicKitPodsDemo](https://github.com/linkplayapp/LPMusicKitPodsDemo)

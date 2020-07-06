@@ -14,9 +14,11 @@ LPBLESetup主要提供了两个功能：
 
 你可以在这里找到更多[文档](https://linkplayapp.github.io/linkplay_sdk_doc/zh-hans/iOS/DeviceSetup.html#ble-%E9%85%8D%E7%BD%91%E6%A8%A1%E5%BC%8F) 。
 
-## 下载SDK
+## 如何开始
 
 - [下载 LPBLESetupiOS](https://github.com/linkplayapp/LPBLESetupiOS/archive/master.zip) 并且导入SDK到你的工程中
+
+- [导入 LPMusicKit.framework](https://github.com/linkplayapp/LPMusicKitiOS), LPBLESetupiOS一般配合LPMusicKitiOS 使用，通过BLE的方式，把设备配网到路由器上
 
 ## SDK Demo
 ###  1. 使用 CocoaPods 安装SDK的demo
