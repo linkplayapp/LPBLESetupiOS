@@ -30,7 +30,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param state Bluetooth state
 - (void)BLEManger:(LPBLEManager *)BLEManger BLEState:(CBCentralManagerState)state;
 
-/// BLE connection interrupted.
+/**
+ * BLE connection interrupted.
+ * When the BLE network configuration is completed, the device will actively disconnect the BLE connection with the mobile phone, please ignore the BLE disconnect proxy method triggered this time
+ */
 - (void)BLEMangerDidDisconnectPeripheral;
 
 @end

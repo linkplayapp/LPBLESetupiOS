@@ -31,6 +31,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// BLE device Id identification
 @property (nonatomic, copy) NSString *BLEDeviceId;
 
+/// Device uuid
+@property (nonatomic, copy) NSString *UUID;
+
+/// Determine whether the device supports 5G BLE Setup
+@property (nonatomic, assign) BOOL isSupport5G;
+
 @end
 
 NS_ASSUME_NONNULL_END
