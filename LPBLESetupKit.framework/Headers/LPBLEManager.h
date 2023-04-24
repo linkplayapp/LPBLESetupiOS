@@ -118,6 +118,35 @@ Connect the peripheral you want
                auth:(NSString *)auth
                encry:(NSString *)encry
             callback:(void(^)(LP_CONNECT_AP_STATE code, id _Nullable responseObj))callback;
+
+/**
+Connect the peripheral you want, for Enterprise router network
+ @warning
+ Only the new BLE protocol can get the WiFi list around the device and get WiFi information.
+@param ssid WiFi name string.
+@param password password string.
+@param auth auth. 
+@param encry encry.
+@param username username.
+@param callback connect result callback.
+The following is the router type and the corresponding Auth value:
+ 
+ WiFi Type                           Auth
+ None :                                Open
+ WEP :                                 WEP
+ WPA :                                 WPAPSK
+ WPA 2 :                              WPA2PSK
+ WPA 3 :                              WPA3SAE
+ WPA Enterprise :                WPAEAP
+ WPA2 Enterprise :             WPA2EAP
+*/
+- (void)connectWLAN:(NSString *)ssid
+           password:(NSString *)password
+               auth:(NSString *)auth
+               encry:(NSString *)encry
+            username:(NSString *)username
+            callback:(void(^)(LP_CONNECT_AP_STATE code, id _Nullable responseObj))callback;
+
 /*
 Cancel the connection to the WiFi. If the UI layer sets a connection timeout during the network configuration process, pay attention to calling this method to destroy the callback.Prevents callbacks from causing UI interface confusion.
 */
