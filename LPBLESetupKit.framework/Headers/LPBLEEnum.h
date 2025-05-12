@@ -55,10 +55,21 @@ typedef NS_ENUM(NSUInteger, LP_CONNECT_AP_STATE) {
 Used with BLEProtocolType to determine the encryption method in BLE transmission.
 */
 typedef NS_ENUM(NSUInteger, LPBLEProtocolVersion) {
-    LPBLEProtocolVersion1_0_1,
-    LPBLEProtocolVersion1_0_2,
+    LPBLEProtocolVersion1_0_1,              // Version 1.0.1 ble 配网时传送的密码和账号使用原始数据
+    LPBLEProtocolVersion1_0_2,              // Version 1.0.2 ble 配网时传送的密码和账号使用16进制数据
     LPBLEProtocolVersion1_0_3,
+    LPBLEProtocolVersion1_0_4,              //修复BLE拼包最后一包小于六位会被丢掉。
+    LPBLEProtocolVersion1_0_5,              //支持BLE发送restart等指令
+    LPBLEProtocolVersion1_0_6,              //BLE SSID 和Pass 单独发送
+    LPBLEProtocolVersion1_0_7,              //BLE支持通过by pass获取output列表
+    LPBLEProtocolVersion1_0_8,              //BLE支持指定ssid连接
 };
+
+typedef NS_ENUM(NSUInteger, LPOldBLEProtocolVersion) {
+    LPOldBLEProtocolVersion_1,              // 默认版本
+    LPOldBLEProtocolVersion_2,
+};
+
 
 /*
 BLE protocol type used by the device.

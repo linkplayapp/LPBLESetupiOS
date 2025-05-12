@@ -28,6 +28,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// Used with BLEProtocolType to determine the encryption method in BLE transmission.
 @property (nonatomic, assign) LPBLEProtocolVersion BLEProtocolVersion;
 
+/// 1.0 BLE 版本号
+@property (nonatomic, assign) LPOldBLEProtocolVersion oldBLEProtocolVersion;
+
 /// BLE device Id identification
 @property (nonatomic, copy) NSString *BLEDeviceId;
 
